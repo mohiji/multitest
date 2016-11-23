@@ -1,9 +1,9 @@
 (ns multitest.core
-  (:gen-class))
-
-(defmulti foo :bar)
+  (:gen-class)
+  (:require [multitest.defs :as defs]
+            [multitest.other]))
 
 (defn -main
   "I don't do a whole lot."
   [args]
-  (foo {:bar "lol"}))
+  (defs/foo {:bar "lol"}))

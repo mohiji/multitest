@@ -1,7 +1,6 @@
 (ns multitest.other
-  (:require [multitest.core :as core]))
+  (:require [multitest.defs :as defs]))
 
 
-(defmethod core/foo "lol" [_]
+(defmethod defs/foo "lol" [_]
   (println "you said lol"))
-
